@@ -1,0 +1,196 @@
+[29Jul2019 19:38:33.371] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--username, Ferromancy, --version, 1.14.3-forge-27.0.53, --gameDir, C:\Users\Miles' PC\AppData\Roaming\.minecraft, --assetsDir, C:\Users\Miles' PC\AppData\Roaming\.minecraft\assets, --assetIndex, 1.14, --uuid, c5adef72d2b04aa4a6e840cb78f50d94, --accessToken, ????????, --userType, mojang, --versionType, release, --launchTarget, fmlclient, --fml.forgeVersion, 27.0.53, --fml.mcVersion, 1.14.3, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20190624.152911]
+[29Jul2019 19:38:33.376] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 3.0.1+56+e6669cf starting: java version 1.8.0_51 by Oracle Corporation
+[29Jul2019 19:38:33.723] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[29Jul2019 19:38:34.128] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmlclient' with arguments [--version, 1.14.3-forge-27.0.53, --gameDir, C:\Users\Miles' PC\AppData\Roaming\.minecraft, --assetsDir, C:\Users\Miles' PC\AppData\Roaming\.minecraft\assets, --username, Ferromancy, --assetIndex, 1.14, --uuid, c5adef72d2b04aa4a6e840cb78f50d94, --accessToken, ????????, --userType, mojang, --versionType, release]
+[29Jul2019 19:38:35.492] [Client thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Ferromancy
+[29Jul2019 19:38:36.011] [Client thread/INFO] [net.minecraftforge.fml.ModLoader/CORE]: Loading Network data for FML net version: FML2
+[29Jul2019 19:38:40.575] [Client thread/WARN] [net.minecraft.client.GameSettings/]: Skipping bad option: lastServer:
+[29Jul2019 19:38:40.599] [Client thread/INFO] [net.minecraft.client.Minecraft/]: LWJGL Version: 3.2.2 build 10
+[29Jul2019 19:38:41.628] [modloading-worker-9/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 27.0.53, for MC 1.14.3 with MCP 20190624.152911
+[29Jul2019 19:38:41.629] [modloading-worker-9/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v27.0.53 Initialized
+[29Jul2019 19:38:41.998] [Client thread/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/]: Exception caught during firing event: null
+	Index: 3
+	Listeners:
+		0: NORMAL
+		1: ASM: class com.root.sorcery.Sorcery$RegistryEvents onItemsRegistry(Lnet/minecraftforge/event/RegistryEvent$Register;)V
+		2: ASM: class com.root.sorcery.Sorcery$RegistryEvents onBlocksRegistry(Lnet/minecraftforge/event/RegistryEvent$Register;)V
+		3: ASM: class com.root.sorcery.Sorcery$RegistryEvents onTileEntityRegistry(Lnet/minecraftforge/event/RegistryEvent$Register;)V
+java.lang.NullPointerException
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)
+	at com.google.common.collect.SingletonImmutableSet.<init>(SingletonImmutableSet.java:47)
+	at com.google.common.collect.ImmutableSet.of(ImmutableSet.java:82)
+	at com.google.common.collect.ImmutableSet.copyOf(ImmutableSet.java:319)
+	at net.minecraft.tileentity.TileEntityType$Builder.func_223042_a(TileEntityType.java:107)
+	at com.root.sorcery.Sorcery$RegistryEvents.onTileEntityRegistry(Sorcery.java:99)
+	at net.minecraftforge.eventbus.ASMEventHandler_3_RegistryEvents_onTileEntityRegistry_Register.invoke(.dynamic)
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:80)
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258)
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.fireEvent(FMLModContainer.java:106)
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer$$Lambda$1977/691200351.accept(Unknown Source)
+	at java.util.function.Consumer.lambda$andThen$14(Consumer.java:65)
+	at java.util.function.Consumer$$Lambda$1970/496751062.accept(Unknown Source)
+	at java.util.function.Consumer.lambda$andThen$14(Consumer.java:65)
+	at java.util.function.Consumer$$Lambda$1970/496751062.accept(Unknown Source)
+	at net.minecraftforge.fml.ModContainer.transitionState(ModContainer.java:112)
+	at net.minecraftforge.fml.ModList.lambda$dispatchSynchronousEvent$4(ModList.java:110)
+	at net.minecraftforge.fml.ModList$$Lambda$2087/95788093.accept(Unknown Source)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at net.minecraftforge.fml.ModList.dispatchSynchronousEvent(ModList.java:110)
+	at net.minecraftforge.fml.ModList.lambda$static$0(ModList.java:81)
+	at net.minecraftforge.fml.ModList$$Lambda$1950/844185066.dispatchEvent(Unknown Source)
+	at net.minecraftforge.fml.LifecycleEventProvider.dispatch(LifecycleEventProvider.java:71)
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:173)
+	at net.minecraftforge.fml.ModLoader.lambda$gatherAndInitializeMods$21(ModLoader.java:165)
+	at net.minecraftforge.fml.ModLoader$$Lambda$2114/1735717476.accept(Unknown Source)
+	at net.minecraftforge.registries.GameData.fireRegistryEvents(GameData.java:915)
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:165)
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$begin$2(ClientModLoader.java:67)
+	at net.minecraftforge.fml.client.ClientModLoader$$Lambda$1945/175881660.run(Unknown Source)
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:82)
+	at net.minecraftforge.fml.client.ClientModLoader$$Lambda$1946/1676585156.run(Unknown Source)
+	at net.minecraftforge.fml.client.ClientModLoader.begin(ClientModLoader.java:67)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:453)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:365)
+	at net.minecraft.client.main.Main.main(SourceFile:154)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:56)
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider$$Lambda$320/91323447.call(Unknown Source)
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37)
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:50)
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:68)
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:80)
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65)
+
+[29Jul2019 19:38:42.001] [Client thread/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Caught exception during event RegistryEvent.Register<minecraft:block_entity_type> dispatch for modid sorcery
+java.lang.NullPointerException: null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770) ~[guava-21.0.jar:?]
+	at com.google.common.collect.SingletonImmutableSet.<init>(SingletonImmutableSet.java:47) ~[guava-21.0.jar:?]
+	at com.google.common.collect.ImmutableSet.of(ImmutableSet.java:82) ~[guava-21.0.jar:?]
+	at com.google.common.collect.ImmutableSet.copyOf(ImmutableSet.java:319) ~[guava-21.0.jar:?]
+	at net.minecraft.tileentity.TileEntityType$Builder.func_223042_a(TileEntityType.java:107) ~[?:?]
+	at com.root.sorcery.Sorcery$RegistryEvents.onTileEntityRegistry(Sorcery.java:99) ~[?:1.0]
+	at net.minecraftforge.eventbus.ASMEventHandler_3_RegistryEvents_onTileEntityRegistry_Register.invoke(.dynamic) ~[?:?]
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:80) ~[eventbus-0.10.3-milestone.0.1+1a5fa31-service.jar:?]
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:258) ~[eventbus-0.10.3-milestone.0.1+1a5fa31-service.jar:?]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.fireEvent(FMLModContainer.java:106) [?:27.0]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer$$Lambda$1977/691200351.accept(Unknown Source) [?:27.0]
+	at java.util.function.Consumer.lambda$andThen$14(Consumer.java:65) [?:1.8.0_51]
+	at java.util.function.Consumer$$Lambda$1970/496751062.accept(Unknown Source) [?:1.8.0_51]
+	at java.util.function.Consumer.lambda$andThen$14(Consumer.java:65) [?:1.8.0_51]
+	at java.util.function.Consumer$$Lambda$1970/496751062.accept(Unknown Source) [?:1.8.0_51]
+	at net.minecraftforge.fml.ModContainer.transitionState(ModContainer.java:112) [?:?]
+	at net.minecraftforge.fml.ModList.lambda$dispatchSynchronousEvent$4(ModList.java:110) [?:?]
+	at net.minecraftforge.fml.ModList$$Lambda$2087/95788093.accept(Unknown Source) [?:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) [?:1.8.0_51]
+	at net.minecraftforge.fml.ModList.dispatchSynchronousEvent(ModList.java:110) [?:?]
+	at net.minecraftforge.fml.ModList.lambda$static$0(ModList.java:81) [?:?]
+	at net.minecraftforge.fml.ModList$$Lambda$1950/844185066.dispatchEvent(Unknown Source) [?:?]
+	at net.minecraftforge.fml.LifecycleEventProvider.dispatch(LifecycleEventProvider.java:71) [?:?]
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:173) [?:?]
+	at net.minecraftforge.fml.ModLoader.lambda$gatherAndInitializeMods$21(ModLoader.java:165) [?:?]
+	at net.minecraftforge.fml.ModLoader$$Lambda$2114/1735717476.accept(Unknown Source) [?:?]
+	at net.minecraftforge.registries.GameData.fireRegistryEvents(GameData.java:915) [?:?]
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:165) [?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$begin$2(ClientModLoader.java:67) [?:?]
+	at net.minecraftforge.fml.client.ClientModLoader$$Lambda$1945/175881660.run(Unknown Source) [?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:82) [?:?]
+	at net.minecraftforge.fml.client.ClientModLoader$$Lambda$1946/1676585156.run(Unknown Source) [?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.begin(ClientModLoader.java:67) [?:?]
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:453) [?:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:365) [?:?]
+	at net.minecraft.client.main.Main.main(SourceFile:154) [?:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:56) [forge-1.14.3-27.0.53.jar:27.0]
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider$$Lambda$320/91323447.call(Unknown Source) [forge-1.14.3-27.0.53.jar:27.0]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-3.0.1.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:50) [modlauncher-3.0.1.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:68) [modlauncher-3.0.1.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:80) [modlauncher-3.0.1.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-3.0.1.jar:?]
+[29Jul2019 19:38:42.014] [Client thread/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event LOAD_REGISTRIES, 1 errors found
+[29Jul2019 19:38:42.014] [Client thread/FATAL] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: EventBus 0 shutting down - future events will not be posted.
+java.lang.Exception: stacktrace
+	at net.minecraftforge.eventbus.EventBus.shutdown(EventBus.java:278) [eventbus-0.10.3-milestone.0.1+1a5fa31-service.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:84) [?:?]
+	at net.minecraftforge.fml.client.ClientModLoader$$Lambda$1946/1676585156.run(Unknown Source) [?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.begin(ClientModLoader.java:67) [?:?]
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:453) [?:?]
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:365) [?:?]
+	at net.minecraft.client.main.Main.main(SourceFile:154) [?:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:56) [forge-1.14.3-27.0.53.jar:27.0]
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider$$Lambda$320/91323447.call(Unknown Source) [forge-1.14.3-27.0.53.jar:27.0]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-3.0.1.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:50) [modlauncher-3.0.1.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:68) [modlauncher-3.0.1.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:80) [modlauncher-3.0.1.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-3.0.1.jar:?]
+[29Jul2019 19:38:43.091] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[29Jul2019 19:38:43.168] [Client thread/INFO] [com.mojang.realmsclient.plugin.RealmsPluginImpl/]: Built for minecraft version 1.14.3
+[29Jul2019 19:38:44.327] [Server-Worker-5/ERROR] [net.minecraftforge.fml.ModLoader/LOADING]: Skipping lifecycle event SETUP, 1 errors found.
+[29Jul2019 19:38:44.327] [Server-Worker-5/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event SETUP, 1 errors found
+[29Jul2019 19:38:44.327] [Thread-1/FATAL] [net.minecraftforge.common.ForgeConfig/CORE]: Forge config just got changed on the file system!
+[29Jul2019 19:38:44.327] [Server-Worker-5/FATAL] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: EventBus 0 shutting down - future events will not be posted.
+java.lang.Exception: stacktrace
+	at net.minecraftforge.eventbus.EventBus.shutdown(EventBus.java:278) [eventbus-0.10.3-milestone.0.1+1a5fa31-service.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:84) [?:?]
+	at net.minecraftforge.fml.client.ClientModLoader$$Lambda$1946/1676585156.run(Unknown Source) [?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.startModLoading(ClientModLoader.java:92) [?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$onreload$3(ClientModLoader.java:74) [?:?]
+	at net.minecraftforge.fml.client.ClientModLoader$$Lambda$2286/1824222273.run(Unknown Source) [?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:82) [?:?]
+	at net.minecraftforge.fml.client.ClientModLoader$$Lambda$1946/1676585156.run(Unknown Source) [?:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1618) [?:1.8.0_51]
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1610) [?:1.8.0_51]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) [?:1.8.0_51]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) [?:1.8.0_51]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1689) [?:1.8.0_51]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) [?:1.8.0_51]
+[29Jul2019 19:38:45.187] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'sorcery:blockstates/chondrite_blast_furnace.json' in resourcepack: 'modid-1.0.jar' for variant: 'facing=north,lit=false': Unknown blockstate property: 'lit'
+[29Jul2019 19:38:45.188] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'sorcery:blockstates/chondrite_blast_furnace.json' in resourcepack: 'modid-1.0.jar' for variant: 'facing=east,lit=false': Unknown blockstate property: 'lit'
+[29Jul2019 19:38:45.188] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'sorcery:blockstates/chondrite_blast_furnace.json' in resourcepack: 'modid-1.0.jar' for variant: 'facing=south,lit=true': Unknown blockstate property: 'lit'
+[29Jul2019 19:38:45.188] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'sorcery:blockstates/chondrite_blast_furnace.json' in resourcepack: 'modid-1.0.jar' for variant: 'facing=west,lit=false': Unknown blockstate property: 'lit'
+[29Jul2019 19:38:45.188] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'sorcery:blockstates/chondrite_blast_furnace.json' in resourcepack: 'modid-1.0.jar' for variant: 'facing=east,lit=true': Unknown blockstate property: 'lit'
+[29Jul2019 19:38:45.188] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'sorcery:blockstates/chondrite_blast_furnace.json' in resourcepack: 'modid-1.0.jar' for variant: 'facing=south,lit=false': Unknown blockstate property: 'lit'
+[29Jul2019 19:38:45.188] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'sorcery:blockstates/chondrite_blast_furnace.json' in resourcepack: 'modid-1.0.jar' for variant: 'facing=north,lit=true': Unknown blockstate property: 'lit'
+[29Jul2019 19:38:45.188] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'sorcery:blockstates/chondrite_blast_furnace.json' in resourcepack: 'modid-1.0.jar' for variant: 'facing=west,lit=true': Unknown blockstate property: 'lit'
+[29Jul2019 19:38:45.188] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'sorcery:blockstates/chondrite_blast_furnace.json' missing model for variant: 'sorcery:chondrite_blast_furnace#facing=west'
+[29Jul2019 19:38:45.188] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'sorcery:blockstates/chondrite_blast_furnace.json' missing model for variant: 'sorcery:chondrite_blast_furnace#facing=up'
+[29Jul2019 19:38:45.188] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'sorcery:blockstates/chondrite_blast_furnace.json' missing model for variant: 'sorcery:chondrite_blast_furnace#facing=down'
+[29Jul2019 19:38:45.188] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'sorcery:blockstates/chondrite_blast_furnace.json' missing model for variant: 'sorcery:chondrite_blast_furnace#facing=north'
+[29Jul2019 19:38:45.189] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'sorcery:blockstates/chondrite_blast_furnace.json' missing model for variant: 'sorcery:chondrite_blast_furnace#facing=east'
+[29Jul2019 19:38:45.189] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'sorcery:blockstates/chondrite_blast_furnace.json' missing model for variant: 'sorcery:chondrite_blast_furnace#facing=south'
+[29Jul2019 19:38:45.322] [Server-Worker-6/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'sorcery:reliquary_block#inventory' referenced from: sorcery:reliquary_block#inventory: java.io.FileNotFoundException: sorcery:models/item/reliquary_block.json
+[29Jul2019 19:38:45.734] [Server-Worker-6/ERROR] [net.minecraftforge.fml.ModLoader/LOADING]: Skipping lifecycle event ENQUEUE_IMC, 1 errors found.
+[29Jul2019 19:38:45.734] [Server-Worker-6/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event ENQUEUE_IMC, 1 errors found
+[29Jul2019 19:38:45.734] [Server-Worker-6/FATAL] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: EventBus 0 shutting down - future events will not be posted.
+java.lang.Exception: stacktrace
+	at net.minecraftforge.eventbus.EventBus.shutdown(EventBus.java:278) [eventbus-0.10.3-milestone.0.1+1a5fa31-service.jar:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$createRunnableWithCatch$5(ClientModLoader.java:84) [?:?]
+	at net.minecraftforge.fml.client.ClientModLoader$$Lambda$1946/1676585156.run(Unknown Source) [?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.finishModLoading(ClientModLoader.java:105) [?:?]
+	at net.minecraftforge.fml.client.ClientModLoader.lambda$onreload$4(ClientModLoader.java:76) [?:?]
+	at net.minecraftforge.fml.client.ClientModLoader$$Lambda$2288/859897724.run(Unknown Source) [?:?]
+	at java.util.concurrent.CompletableFuture.uniRun(CompletableFuture.java:705) [?:1.8.0_51]
+	at java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:687) [?:1.8.0_51]
+	at java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:443) [?:1.8.0_51]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) [?:1.8.0_51]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) [?:1.8.0_51]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1689) [?:1.8.0_51]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) [?:1.8.0_51]
+[29Jul2019 19:38:45.751] [Client thread/WARN] [net.minecraft.client.GameSettings/]: Skipping bad option: lastServer:
+[29Jul2019 19:38:45.830] [Client thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[29Jul2019 19:38:45.831] [Client thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[29Jul2019 19:38:46.007] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512 textures-atlas
+[29Jul2019 19:38:46.512] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256 textures/particle-atlas
+[29Jul2019 19:38:46.516] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256 textures/painting-atlas
+[29Jul2019 19:38:46.517] [Client thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128 textures/mob_effect-atlas
